@@ -10,13 +10,12 @@
         android:id="@+id/edt_numero1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="Numero1"
         android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,12 +23,12 @@
         android:id="@+id/edt_numero2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Numero2"
         android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_numero1" />
 
@@ -37,36 +36,31 @@
         android:id="@+id/bt_sumar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="sumar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         android:onClick="sumar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_numero2" />
+        android:text="sumar"
+        app:layout_constraintStart_toEndOf="@+id/edt_numero1"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bt_siguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:text="Siguiente"
-        android:onClick="siguiente"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.766"
-        app:layout_constraintStart_toEndOf="@+id/bt_sumar"
-        app:layout_constraintTop_toBottomOf="@+id/edt_numero2" />
+        app:layout_constraintStart_toEndOf="@+id/edt_numero2"
+        app:layout_constraintTop_toBottomOf="@+id/bt_sumar" />
 
     <TextView
         android:id="@+id/txt_suma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
         android:text="Resultado suma"
         android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_sumar" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_numero2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
